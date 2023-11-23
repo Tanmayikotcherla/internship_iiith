@@ -1,0 +1,40 @@
+/* styles/PieChart.css */
+
+.pie-chart-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #FFE4C4; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pie-chart-canvas {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+/* Add any other styles as needed */
+
+/* Updated styles for responsive mode */
+@media only screen and (max-width: 600px) {
+  .pie-chart-container .pie-chart {
+    width: calc(100% - 20px);
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* styles/App.css */
+
+.responsive-pie-charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}

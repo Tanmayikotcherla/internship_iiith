@@ -1,0 +1,62 @@
+/* styles/Table.css */
+
+.table-container {
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(52, 48, 48, 0.1);
+  overflow-x: auto; /* Add horizontal scroll for small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: 1px solid #000; /* Set table border to black */
+}
+
+thead {
+  background-color: #6c34db;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #000; /* Set cell borders to black */
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f7fd;
+}
+
+tbody tr:hover {
+  background-color: #e9f0e9;
+  transition: background-color 0.3s ease;
+}
+
+/* Set corners and edges to black */
+td:first-child, th:first-child {
+  border-left: 1px solid #000;
+}
+
+td:last-child, th:last-child {
+  border-right: 1px solid #000;
+}
+
+tbody tr:last-child td {
+  border-bottom: 1px solid #000;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  table {
+    min-width: 360px; /* Set a minimum width for the table */
+  }
+
+  .table-container {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+  }
+}

@@ -1,0 +1,13 @@
+/* src/styles/Footer.css */
+
+
+
+footer {
+    background-color: #29335c;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px; /* Add margin to separate it from the content */
+  }
+  
